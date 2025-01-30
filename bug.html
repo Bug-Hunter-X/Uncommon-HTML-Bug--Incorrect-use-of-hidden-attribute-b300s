@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden because of the incorrect use of the hidden attribute.
+  </div>
+  <script>
+    document.getElementById("myDiv").hidden = true; //This works fine
+    document.getElementById("myDiv").hidden = "true"; //This doesn't work
+  </script>
+</body>
+</html>
